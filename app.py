@@ -3,7 +3,7 @@ import pandas as pd
 
 # Page Configuration
 st.set_page_config(
-    page_title="Rithik Loomba - Interactive M&E Dashboard Resume",
+    page_title="Rithik Loomba- Resume",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -27,7 +27,7 @@ st.markdown("""
 # --- SIDEBAR: CONTACT & NAVIGATION ---
 with st.sidebar:
     st.markdown("<h2 style='color: #1E3A8A; margin-bottom:0;'>Rithik Loomba</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='color: #6B7280; font-style: italic;'>Monitoring & Evaluation Professional</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #6B7280; font-style: italic;'>Social Sector Professional</p>", unsafe_allow_html=True)
     st.markdown("---")
     
     # Contact Info
@@ -50,13 +50,14 @@ with st.sidebar:
 # --- MAIN CONTENT DYNAMICS ---
 
 if page == "Overview & Metrics":
-    st.markdown("<div class='main-title'>M&E Dashboard Resume</div>", unsafe_allow_html=True)
-    st.markdown("<div class='subtitle'>Targeting: UN India SDG Country Fund — System-level M&E Design & Multi-sector Reporting</div>", unsafe_allow_html=True)
+    st.markdown("<div class='main-title'>Resume</div>", unsafe_allow_html=True)
+    st.markdown("<div class='subtitle'>Monitoring & Evaluation | Digital Health | Data Analytics | Public Health | Program Management</div>", unsafe_allow_html=True)
+    st.markdown("<div class='subtitle'>UNDP | Ministry of Health & Family Welfare</div>", unsafe_allow_html=True)
     
     # Professional Summary
     st.markdown("<div class='section-header'>Executive Summary</div>", unsafe_allow_html=True)
     st.info(
-        "Monitoring & Evaluation professional with 6+ years of experience designing and operating national-level M&E frameworks, "
+        "Monitoring & Evaluation professional with 10+ years of experience designing and operating national-level M&E frameworks, "
         "results-based reporting, and data systems across multi-stakeholder public health programmes in India. Skilled in translating "
         "field-level data into decision-ready analysis for government, UN, and donor audiences."
     )
@@ -65,9 +66,9 @@ if page == "Overview & Metrics":
     st.markdown("<div class='section-header'>Key Portfolio Metrics</div>", unsafe_allow_html=True)
     m1, m2, m3, m4 = st.columns(4)
     with m1:
-        st.markdown("<div class='metric-box'><div class='metric-val'>6+ Years</div><div class='metric-lbl'>M&E Experience</div></div>", unsafe_allow_html=True)
+        st.markdown("<div class='metric-box'><div class='metric-val'>10+ Years</div><div class='metric-lbl'>Experience</div></div>", unsafe_allow_html=True)
     with m2:
-        st.markdown("<div class='metric-box'><div class='metric-val'>4 Platforms</div><div class='metric-lbl'>National Systems managed</div></div>", unsafe_allow_html=True)
+        st.markdown("<div class='metric-box'><div class='metric-val'>5 Platforms</div><div class='metric-lbl'>National Systems managed</div></div>", unsafe_allow_html=True)
     with m3:
         st.markdown("<div class='metric-box'><div class='metric-val'>2 National</div><div class='metric-lbl'>Guidelines Published</div></div>", unsafe_allow_html=True)
     with m4:
@@ -76,9 +77,9 @@ if page == "Overview & Metrics":
     # Core Competencies Chart / Breakdown
     st.markdown("<div class='section-header'>National Platforms Overview</div>", unsafe_allow_html=True)
     platform_data = pd.DataFrame({
-        'Platform/Program': ['U-WIN', 'TB-WIN', 'eVIN', 'CoWIN', 'Anemia Mukt Bharat', 'National Deworming Day'],
-        'Scope': ['National Routine Immunization', 'National TB Tracking', 'Vaccine Logistics Network', 'COVID-19 Vaccine Rollout', 'Cross-sectoral Nutrition', 'Mass Drug Administration'],
-        'Key Level': ['National / Project Review', 'National / State Feedback', 'National Data Analytics', 'National / Emergency Response', 'National & 4 Focus States', 'National & 4 Focus States']
+        'Platform/Program': ['U-WIN', 'TB-WIN', 'eVIN', 'CoWIN', 'Anemia Mukt Bharat', 'National Deworming Day', 'MAA', 'IDCF'],
+        'Scope': ['National Routine Immunization', 'National TB Tracking', 'Vaccine Logistics Network', 'COVID-19 Vaccine Rollout', 'Cross-sectoral Nutrition', 'Mass Drug Administration', 'Community Awareness', 'Community Outreach'],
+        'Key Level': ['National / Project Review', 'National / State Feedback', 'National Data Analytics', 'National / Emergency Response', 'National & 4 Focus States', 'National & 4 Focus States', 'National', 'National / State Feedback']
     })
     st.table(platform_data)
 
